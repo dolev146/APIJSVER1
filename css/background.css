@@ -1,0 +1,22 @@
+section {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg , #aaee52 , #3ce7a0 , #23A6D5 , #65f5d3f3);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50% ;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0 50% ;
+    }
+}

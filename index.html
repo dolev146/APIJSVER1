@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COIN-COINY</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/background.css">
+    
+    
+</head>
+
+<body>
+    <!-- making a section that will contain the background color style css -->
+    <section>
+        <!-- heading of the page  -->
+        <h1 style="text-align: center; font-size: 4em;"> Cryptonite </h1>
+        <!-- navigation bar of the page   i used bootswatch navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- nevigation -->
+            <ul class="navbar-nav mr-auto">
+                <li><a id="Home" class="nav-link" href="#">Home</a></li>
+                <li><a id="Livereports" class="nav-link" href="#">Livereports</a></li>
+                <li><a id="About" class="nav-link" href="#">About</a></li>
+            </ul>
+            <!-- search -->
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchInput" class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button id="searchBtn" type="button" class="btn btn-secondary my-2 my-sm-0" >Search</button>
+            </form>
+        </nav>
+        <hr>
+        <!-- this is the outlet i will inject all the information inside this div  -->
+        <main class="link-outlet">
+        </main>
+        <!-- end tag of background  -->
+
+        <!-- modal -->
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Sorry...You are allowed to track 5 coins Max.
+                            Please Remove One Of the Following in order to Track your 6th choice.</h5>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="SaveChanges">Save
+                            Changes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="CloseBtn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal  -->
+
+
+
+
+    </section>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="./components/home/infoclick.js"></script>
+    <script src="./components/home/createmoreinformationfunction.js"></script>
+    <script src="./components/home/liveReportClick.js"></script>
+    <script src="./components/home/ui.js"></script>
+    <script src="./components/home/Ajax.js"></script>
+    <script src="./components/home/fromlocalstorage.js"></script>
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>
