@@ -5,7 +5,7 @@ function create100coins(){
     let cards = coins.map(
         (coin) => `
         <div class="card bg-light mb-3" style="max-width: 20rem; color:grey;">
-                   <div class="card-header">${coin.symbol.toUpperCase()}</div>
+                   <div class="card-header">Coin-symbol: ${coin.symbol.toUpperCase()}</div>
                    <div class="card-body" style="text-align: center;">
                    <div>
                      <h4 class="card-title">${coin.name}</h4>
