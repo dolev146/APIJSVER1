@@ -8,8 +8,8 @@ function create100coins(){
                    <div class="card-header">${coin.symbol.toUpperCase()}</div>
                    <div class="card-body" style="text-align: center;">
                    <div>
-                     <h4 class="card-title">${coin.name}</h4>
-                     <p class="card-text">id: ${coin.id}.</p>
+                     <h4 class="card-title">coin name :${coin.name}</h4>
+                     <p class="card-text">coin symbol : ${coin.symbol.toUpperCase()}.</p>
                    </div>
                  <div>
 
